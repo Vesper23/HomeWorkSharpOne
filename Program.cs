@@ -84,16 +84,11 @@ else
 
 
 Console.Write("Введите число: ");
-string number = Console.ReadLine()!;
-int num = int.Parse(number);
+int number = Convert.ToInt32(Console.ReadLine());
 
 int start = 2;
-while (start <= num)
+while (start <= number)
 {
     Console.Write(start+", ");
     start += 2;
-    if ((start == num) && (start == num - 1))
-    {
-        Console.Write(".");
-    }
 }
