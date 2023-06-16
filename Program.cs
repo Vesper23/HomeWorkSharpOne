@@ -65,7 +65,7 @@ else
 
 //Задача 6: Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка).
 
-
+/*
 Console.Write("Введите число: ");
 string number = Console.ReadLine()!;
 int num = int.Parse(number);
@@ -78,6 +78,22 @@ else
 {
     Console.WriteLine($"Число нечётное.");
 }
-
+*/
 
 //Задача 8: Напишите программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.
+
+
+Console.Write("Введите число: ");
+string number = Console.ReadLine()!;
+int num = int.Parse(number);
+
+int start = 2;
+while (start <= num)
+{
+    Console.Write(start+", ");
+    start += 2;
+    if ((start == num) && (start == num - 1))
+    {
+        Console.Write(".");
+    }
+}
